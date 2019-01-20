@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/wixeyView"
+    android:theme="@style/AppTheme.NoActionBar"
+    tools:context=".MainActivityWixeyTalk">
+
+    <LinearLayout
+        android:id="@+id/loImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/wixey"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txtAngle"
+            android:layout_width="193dp"
+            android:layout_height="94dp"
+            android:layout_marginLeft="64dp"
+            android:layout_marginTop="74dp"
+            android:alpha="1.0"
+            android:background="#79fa08"
+            android:contentDescription="@string/txtDescDiplay"
+            android:paddingTop="20dp"
+            android:textAlignment="textEnd"
+            android:textSize="44sp"
+            android:visibility="visible"
+            tools:layout_editor_absoluteX="66dp"
+            tools:layout_editor_absoluteY="74dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnOnOff"
+                android:layout_width="3dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_marginStart="82dp"
+                android:layout_marginTop="34dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/btnDescPowerButton" />
+
+            <Button
+                android:id="@+id/btnBuffer"
+                android:layout_width="3dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="34dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:enabled="false" />
+
+            <Button
+                android:id="@+id/btnZero"
+                android:layout_width="3dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="80dp"
+                android:layout_marginTop="34dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/btnDescZeroButton" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/loButtons"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/loImage">
+
+        <Switch
+            android:id="@+id/btnTalk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_weight="1"
+            android:layoutDirection="rtl"
+            android:contentDescription="@string/btnDescTalkButton"
+            android:text="@string/Label_TalkButton"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="31dp"
+            tools:layout_editor_absoluteY="345dp" />
+
+        <Switch
+            android:id="@+id/btnRepeat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="24dp"
+            android:layout_weight="1"
+            android:layoutDirection="rtl"
+            android:contentDescription="@string/btnDescRepeatButton"
+            android:importantForAccessibility="yes"
+            android:text="@string/Label_RepeatButton"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="186dp"
+            tools:layout_editor_absoluteY="345dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/loButtons">
+
+        <Switch
+            android:id="@+id/btnAccuracy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/btnDescAccuracy"
+            android:text="@string/btnAccuracy"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="31dp"
+            tools:layout_editor_absoluteY="345dp" />
+
+        <Button
+            android:id="@+id/btnSimulation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/btnStartSimulation"
+            android:text="@string/btnStartSimulation"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="31dp"
+            tools:layout_editor_absoluteY="345dp" />
+
+        <TextView
+            android:id="@+id/txtHarware"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="36dp"
+            android:layout_marginRight="36dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:text="@string/txtDevice"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/txtPurchase"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:autoLink="web"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:linksClickable="true"
+            android:text="@string/txtPurchase"
+            android:textAlignment="center"
+            android:textColor="?android:attr/textColorLink" />
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">WixeyTalk</string>
+    <string name="Label_TalkButton">Talk</string>
+    <string name="Label_RepeatButton">Repeat</string>
+    <string name="btnDescPowerButton">Power</string>
+    <string name="txtDescDiplay">Display</string>
+    <string name="btnDescZeroButton">Zero</string>
+    <string name="btnDescTalkButton">Talk</string>
+    <string name="btnDescRepeatButton">Repeat</string>
+    <string name="btnDescAccuracy">Enable Point 1 Degree Accuracy</string>
+    <string name="btnStartSimulation">Start Simulation</string>
+    <string name="btnStopSimulation">Stop Simulation</string>
+    <string name="btnNoSimulation">No Simulation Sensor</string>
+    <string name="btnNoSimulationConnected">No Simulation\nDevice Active</string>
+    <string name="btnAccuracy">.1° Accuracy</string>
+    <string name="txtDevice">The WixeyTalk App works in conjunction with the Wixey WR300BT Digital Angle Gauge with Bluetooth output.</string>
+    <string name="txtPurchase">Purchase WR300BT</string>
+    <string name="spkDisplayOff">Display Off</string>
+    <string name="txtError">Erro</string>
+    <string name="spkError">Error</string>
+    <string name="spkWaiting">Waiting</string>
+    <string name="spkZeroing">Zeroing</string>
+    <string name="spkTurningOn">Device Turned On</string>
+    <string name="spkTurningOff">Device Turned Off</string>
+    <string name="txtTurnOnBT">Please enable location for WixeyTalk to allow this app to use low energy Bluetooth</string>
+    <string name="txtTurnOnBTLoc">WixeyTalk is unable to communicate to devices without location permission. Please enable location for WixeyTalk to allow this app to use low energy Bluetooth</string>
+    <string name="txtNoBluetooth">BLUETOOTH_LE not supported in this device!</string>
+    <string name="txtUrl">http://www.wixey.com/anglegauge/index.html</string>
+</resources>
